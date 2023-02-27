@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NavigationBar</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        li, a, button {
+            font-family: "Montserrat", "SansSerif";
+            font-weight: 500;
+            font-size: 16px;
+            color: #e6fcf5;
+            text-decoration: none;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10%;
+        }
+
+        .logo{
+            height: 28px;
+            cursor: pointer;
+        }
+
+        .nav_link{
+            list-style: none;
+        }
+
+        .nav_link li {
+            display: inline-block;
+            padding: 8px 20px;
+        }
+
+        .nav_link li a {
+            transition: all 0.3s ease 0s;
+        }
+
+        .nav_link li a:hover{
+            color: aqua;
+        }
+
+        button{
+            padding: 9px 25px;
+            background-color: lightskyblue;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+
+        button:hover{
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img class="logo" src="GitHub-Logos/GitHub_Logo_White.png">
+    <nav>
+        <ul class="nav_link">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <a href="#" class="cta"><button>Contact</button></a>
+</header>
+</body>
+</html>
