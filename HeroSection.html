@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HeroSection</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: #adb5bd;
+        }
+
+        li,a, button{
+            font-weight: 500;
+            font-family: Montserrat, SansSerif;
+            font-size: 16px;
+            text-decoration: none;
+            color:  black;
+        }
+
+        header{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 30px 10%;
+        }
+
+        .nav_link{
+            list-style: none;
+        }
+        .nav_link li{
+            display: inline-block;
+            padding: 8px 20px;
+        }
+
+        .nav_link li a{
+            transition: all 0.3s ease 0s;
+        }
+
+        button{
+            background-color: Black;
+            color: #e6fcf5;
+            padding: 8px 20px;
+            border-radius: 50px;
+            margin-left: 5px;
+        }
+
+        img{
+            height: 54px;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <img class="logo" src="Logos/pngwing.com%20(6).png" alt="Logo">
+            <nav class="nav_link">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <a href="#">
+                <button>
+                    Sign Up
+                </button>
+            </a>
+        </header>
+</body>
+</html>
