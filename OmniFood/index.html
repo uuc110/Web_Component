@@ -6,28 +6,60 @@
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>OmniFood</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+    </style>
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-<section class="section_hero">
-    <div class="hero">
-        <div class="hero-text-box">
-            <h1 class="heading-primary">
-                A healthy meal delivered to your door, every single day</h1>
-            <p class="hero-description">
-                The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your
-                personal tastes and nutritional needs. We have delivered 250,000+ meals last year!
-            </p>
-            <!--            using a helper class as margin-right-sm mean you can make it as class and apply is anywhere where
-            you need margin to right without affecting other Element -->
-            <a class="btn btn-full margine-right-sm" href="#">Start eating</a>
-            <a class="btn btn-outline" href="#">Learn more &darr;</a>
+<!-- TOP NAVIGATION WITH LOGO AND NAV LINKS-->
+<header class="header">
+    <img src="img/omnifood-logo.png" alt="OmniFood Logo" class="logo">
+    <nav class="main-nav">
+        <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#">Section 1</a></li>
+            <li><a class="main-nav-link" href="#">Section 2</a></li>
+            <li><a class="main-nav-link" href="#">Section 3</a></li>
+            <li><a class="main-nav-link" href="#">Section 4</a></li>
+            <li><a class="main-nav-link nav-cta" href="#">Section 5</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!--HERO SECTION-->
+<main>
+    <section class="section_hero">
+        <div class="hero">
+            <div class="hero-text-box">
+                <h1 class="heading-primary">
+                    A healthy meal delivered to your door, every single day</h1>
+                <p class="hero-description">
+                    The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your
+                    personal tastes and nutritional needs.
+                </p>
+                <!--            using a helper class as margin-right-sm mean you can make it as class and apply is anywhere where
+                you need margin to right without affecting other Element -->
+                <a class="btn btn-full margine-right-sm" href="#">Start eating well</a>
+                <a class="btn btn-outline" href="#">Learn more &darr;</a>
+                <div class="delivered-meals">
+                    <div class="delivered-imgs">
+                        <img alt="" src="img/customers/customer-1.jpg">
+                        <img alt="" src="img/customers/customer-2.jpg">
+                        <img alt="" src="img/customers/customer-3.jpg">
+                        <img alt="" src="img/customers/customer-4.jpg">
+                        <img alt="" src="img/customers/customer-4.jpg">
+                        <img alt="" src="img/customers/customer-5.jpg">
+                        <img alt="" src="img/customers/customer-6.jpg">
+                    </div>
+                    <p class="delivered-text"><span>250,000+</span> meals last year!</p>
+                </div>
+            </div>
+            <div class="hero-img-box">
+                <img alt="Girl Eating Delicious Food" class="hero-img" src="img/hero.png">
+            </div>
         </div>
-        <div class="hero-img-box">
-            <img alt="Girl Eating Delicious Food" class="hero-img" src="img/hero.png">
-        </div>
-    </div>
-</section>
+    </section>
+</main>
 </body>
 </html>
