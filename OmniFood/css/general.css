@@ -84,7 +84,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.grid-3-cold {
+.grid-3-cols {
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -169,4 +169,8 @@ body {
     margin-right: 1.6rem;
 !important;
     /*Using important we make it ensure that this right margine is applied */
+}
+
+strong{
+    font-weight: 500;
 }
