@@ -33,6 +33,8 @@ Paragraph: 1.6
 --- 05 SHADOWS
 
 --- 06 BORDER-RADIUS
+Default: 9px
+medium: 11px
 
 Default: 9px
 
@@ -137,7 +139,7 @@ body {
     /*Double the length on side as compared to up and down*/
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 }
 
 .btn-full:link,
@@ -165,10 +167,44 @@ body {
     box-shadow: inset 0 0 0 3px; /**/
 }
 
+.link:link,
+.link:visited{
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    /*We don't use link udnerline as decoration, so hence we are using the border bottom and then "currentColor" will set the underline color as current applied color*/
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+}
+
+.link:active,
+.link:hover{
+    color: #cf711f;
+/*    By using bottom padding None, it will case the Uprising of text by some pixel
+fix: we simply put it as transparent*/
+    border-bottom: 1px solid transparent;
+}
+
+/*HELPER CLASS || SETTING CLASS*/
+
 .margine-right-sm {
     margin-right: 1.6rem;
 !important;
     /*Using important we make it ensure that this right margine is applied */
+}
+
+/*To create a re-usable helper class,
+* 1. it should have important if its something like margine
+* 2. add it to the class, just line margine right
+*/
+
+.margine-bottom-md{
+    margin-bottom: 4.8rem; !important;
+}
+
+.center-text{
+    text-align: center;
 }
 
 strong{
