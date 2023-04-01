@@ -56,6 +56,7 @@ html {
     /*10px /16px = 0.625 = 62.5%*/
     /*Percentage of user's browser font-size setting*/
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -76,11 +77,14 @@ body {
     padding: 0 3.2rem;
 }
 
+.grid-footer{
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
 .grid {
     display: grid;
     column-gap: 6.4rem;
     row-gap: 9.6rem;
-    
 }
 
 .grid-2-cols {
@@ -89,6 +93,14 @@ body {
 
 .grid-3-cols {
     grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5-cols {
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .grid-center-v {
@@ -130,8 +142,9 @@ body {
     letter-spacing: 0.75px;
     
 }
-
-.btn:link, .btn:visited {
+.btn,
+.btn:link,
+.btn:visited {
     display: inline-block;
     font-weight: 600;
     text-decoration: none;
@@ -140,6 +153,10 @@ body {
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
     transition: all 0.3s;
+    
+    /*For btn itself*/
+    border: none;
+    cursor: pointer;
 }
 
 .btn-full:link,
@@ -165,6 +182,27 @@ body {
     /*border: 3px solid #ffffff;*/
     /*    Trick to add border inside*/
     box-shadow: inset 0 0 0 3px; /**/
+}
+
+.btn-full-form{
+    background-color: #45260a;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 1.2rem;
+    transition: all 0.3s;
+}
+
+.btn-full-form:hover {
+    background-color: #fff;
+    color: #555;
+}
+*:focus{
+    /*More like border but its above the box and not the part of the border box sizing*/
+    /*Never set outline to none since its till doesn't let know the user where is the pointer*/
+    outline: none;
+    /*outline: 4px dotted #e67e22;*/
+    /*outline-offset: ;*/
+    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.550);
 }
 
 .link:link,
